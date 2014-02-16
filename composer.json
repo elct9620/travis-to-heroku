@@ -1,0 +1,12 @@
+{
+    "name": "elct9620/travis-to-heroku",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "authors": [
+        {
+            "name": "蒼時弦也",
+            "email": "elct9620@frost.tw"
+        }
+    ]
+}
