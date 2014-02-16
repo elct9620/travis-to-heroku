@@ -3,6 +3,9 @@
     "require-dev": {
         "phpunit/phpunit": "*"
     },
+    "autoload": {
+        "psr-0": {"Aotoki": "src"}
+    },
     "authors": [
         {
             "name": "蒼時弦也",
