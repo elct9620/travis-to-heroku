@@ -11,4 +11,4 @@ deploy:
   app: aotoki-travis-to-heroku
   on:
     repo: elct9620/travis-to-heroku
-script: phpunit tests
+script: phpunit --bootstrap vendor/autoload.php tests
