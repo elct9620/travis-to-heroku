@@ -1,0 +1,14 @@
+language: php
+php:
+- '5.5'
+- '5.4'
+install: composer install
+deploy:
+  provider: heroku
+  buildpack: https://github.com/elct9620/heroku-buildpacks-php-with-phalcon.git
+  api_key:
+    secure: XJryfTe5Btc2gPbXYehxkdsZWsHmSYIqo87z0ThUq9fPW+V2OCwfDnbbFi8HMVhmhbdvREnbQUAQZP1GOyG7Hx8Xnaq+LmXVeUhpwVIFR82a5AxeFKO2boUsCtisMxjAiRJ5t8UhpgumntJM7IpeYs3mMOsoJStA0VQdVSEyrNA=
+  app: aotoki-travis-to-heroku
+  on:
+    repo: elct9620/travis-to-heroku
+script: phpunit tests
